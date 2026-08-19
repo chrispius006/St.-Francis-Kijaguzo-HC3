@@ -1,0 +1,47 @@
+/* ============================================================
+   EDUCATION-TRAINING.CSS — styles unique to education-training.html
+   ============================================================ */
+
+section{padding:88px 0;}
+@media (max-width:720px){section{padding:56px 0;}}
+
+.programs{background:var(--white);border-bottom:1px solid var(--line);}
+.program-list{display:flex;flex-direction:column;gap:2px;background:var(--line);border:1px solid var(--line);margin-top:12px;}
+.program-row{
+  background:var(--paper);padding:30px 32px;
+  display:grid;grid-template-columns:56px 1fr;gap:24px;align-items:start;
+}
+.program-row .ic-wrap{
+  width:56px;height:56px;border-radius:50%;background:var(--sage);
+  display:flex;align-items:center;justify-content:center;
+}
+.program-row .ic{width:26px;height:26px;color:var(--pine);}
+.program-row h3{font-size:18px;margin-bottom:8px;}
+.program-row p{color:#4a4a40;font-size:15px;max-width:64ch;}
+
+.audience{background:var(--paper);}
+.aud-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:44px;}
+.aud-card .num{font-family:'Fraunces',serif;color:var(--sage);font-size:48px;font-weight:600;line-height:1;}
+.aud-card h3{font-size:19px;margin:10px 0 10px;}
+.aud-card p{color:#4a4a40;font-size:15px;}
+
+.notice{
+  background:var(--sage);border:1px solid var(--line);border-radius:6px;
+  padding:20px 24px;font-size:14.5px;color:#333127;margin-top:32px;
+  max-width:640px;
+}
+.notice strong{color:var(--pine-deep);}
+
+.edu-cta{background:var(--pine-deep);color:var(--white);text-align:center;}
+.edu-cta .inner{max-width:600px;margin:0 auto;}
+.edu-cta h2{color:#fff;font-size:clamp(24px,3vw,32px);}
+.edu-cta p{margin-top:14px;color:rgba(255,253,249,.75);font-size:16px;}
+.edu-cta .btnrow{display:flex;gap:16px;justify-content:center;margin-top:28px;flex-wrap:wrap;}
+.edu-cta .cta-outline{border-color:rgba(255,253,249,.5);color:#fff;}
+.edu-cta .cta-outline:hover{background:#fff;color:var(--pine-deep);}
+
+@media (max-width:720px){
+  .program-row{grid-template-columns:44px 1fr;gap:16px;padding:24px 20px;}
+  .program-row .ic-wrap{width:44px;height:44px;}
+  .aud-grid{grid-template-columns:1fr;gap:32px;}
+}

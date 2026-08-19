@@ -1,0 +1,38 @@
+/* ============================================================
+   ABOUT.CSS — styles unique to about.html
+   ============================================================ */
+
+section{padding:96px 0;}
+@media (max-width:720px){section{padding:64px 0;}}
+
+/* ---------- mission strip ---------- */
+.mission{background:var(--white);border-bottom:1px solid var(--line);}
+.mission .wrap{max-width:820px;text-align:center;}
+.mission h2{font-size:clamp(24px,3vw,32px);}
+.mission p{margin-top:16px;font-size:18px;color:#333127;line-height:1.6;}
+
+/* ---------- timeline ---------- */
+.timeline-section{background:var(--paper);}
+.timeline{position:relative;padding-left:6px;max-width:760px;}
+.tl-item{
+  position:relative;padding:0 0 44px 44px;border-left:2px solid var(--sage);
+}
+.tl-item:last-child{border-color:transparent;padding-bottom:0;}
+.tl-item .dot{
+  position:absolute;left:-9px;top:2px;width:16px;height:16px;border-radius:50%;
+  background:var(--paper);border:2.5px solid var(--gold);
+}
+.tl-item .yr{font-family:'Fraunces',serif;font-weight:600;color:var(--clay);font-size:15px;display:block;margin-bottom:6px;}
+.tl-item h3{font-size:20px;margin-bottom:8px;}
+.tl-item p{color:#4a4a40;max-width:56ch;}
+
+/* ---------- values ---------- */
+.values{background:var(--white);border-bottom:1px solid var(--line);}
+.val-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:44px;}
+.val-card .num{font-family:'Fraunces',serif;color:var(--sage);font-size:52px;font-weight:600;line-height:1;}
+.val-card h3{font-size:20px;margin:10px 0 10px;}
+.val-card p{color:#4a4a40;font-size:15px;}
+
+@media (max-width:920px){
+  .val-grid{grid-template-columns:1fr;gap:32px;}
+}

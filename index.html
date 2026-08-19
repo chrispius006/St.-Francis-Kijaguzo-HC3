@@ -272,28 +272,48 @@
         <button class="car-btn prev" data-carousel="testi-track" aria-label="Scroll testimonials left">&lsaquo;</button>
         <div class="carousel-track" id="testi-track">
           <div class="testi-card">
-            <div class="stars" aria-hidden="true">★★★★★</div>
+            <div class="testi-head">
+              <img class="testi-avatar" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Portrait of a patient from Semuto" loading="lazy">
+              <div>
+                <span class="who">Patient &middot; Semuto</span>
+                <div class="stars" aria-hidden="true">★★★★★</div>
+              </div>
+            </div>
             <span class="quote-mark">&ldquo;</span>
             <p class="quote">The maternity team made me feel safe throughout my pregnancy and delivery. I'm grateful for their patience.</p>
-            <span class="who">Patient &middot; Semuto</span>
           </div>
           <div class="testi-card">
-            <div class="stars" aria-hidden="true">★★★★★</div>
+            <div class="testi-head">
+              <img class="testi-avatar" src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Portrait of a patient from Nakaseke District" loading="lazy">
+              <div>
+                <span class="who">Patient &middot; Nakaseke District</span>
+                <div class="stars" aria-hidden="true">★★★★★</div>
+              </div>
+            </div>
             <span class="quote-mark">&ldquo;</span>
             <p class="quote">Fast, respectful care every time I've visited the lab for testing. The staff explain everything clearly.</p>
-            <span class="who">Patient &middot; Nakaseke District</span>
           </div>
           <div class="testi-card">
-            <div class="stars" aria-hidden="true">★★★★★</div>
+            <div class="testi-head">
+              <img class="testi-avatar" src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Portrait of a community member from Semuto" loading="lazy">
+              <div>
+                <span class="who">Community Member &middot; Semuto</span>
+                <div class="stars" aria-hidden="true">★★★★★</div>
+              </div>
+            </div>
             <span class="quote-mark">&ldquo;</span>
             <p class="quote">The outreach team came to our village for immunization day &mdash; it made all the difference for our children.</p>
-            <span class="who">Community Member &middot; Semuto</span>
           </div>
           <div class="testi-card">
-            <div class="stars" aria-hidden="true">★★★★★</div>
+            <div class="testi-head">
+              <img class="testi-avatar" src="https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Portrait of a patient from Kijaguzo" loading="lazy">
+              <div>
+                <span class="who">Patient &middot; Kijaguzo</span>
+                <div class="stars" aria-hidden="true">★★★★★</div>
+              </div>
+            </div>
             <span class="quote-mark">&ldquo;</span>
             <p class="quote">Compassionate and thorough &mdash; exactly what the Centre's name promises. I always recommend it to neighbours.</p>
-            <span class="who">Patient &middot; Kijaguzo</span>
           </div>
         </div>
         <button class="car-btn next" data-carousel="testi-track" aria-label="Scroll testimonials right">&rsaquo;</button>
@@ -305,16 +325,20 @@
   <section class="stats">
     <div class="wrap">
       <div class="reveal">
-        <div class="num">2012</div>
+        <div class="num" data-count="2012" data-plain="true">0</div>
         <div class="lbl">Year Founded</div>
       </div>
       <div class="reveal">
-        <div class="num">15</div>
-        <div class="lbl">Services Across 4 Areas of Care</div>
+        <div class="num" data-count="15">0</div>
+        <div class="lbl">Bed Capacity</div>
       </div>
       <div class="reveal">
-        <div class="num">1</div>
-        <div class="lbl">District Served, Countless Lives Touched</div>
+        <div class="num" data-count="10000" data-suffix="+">0</div>
+        <div class="lbl">Patients Per Year</div>
+      </div>
+      <div class="reveal">
+        <div class="num" data-count="20">0</div>
+        <div class="lbl">Qualified Staff</div>
       </div>
     </div>
   </section>
@@ -322,46 +346,26 @@
   <!-- STRATEGIC PARTNERS -->
   <section class="partners">
     <div class="wrap reveal">
-      <p class="eyebrow">Working Together</p>
-      <h2 style="font-size:clamp(24px,3vw,32px);margin-top:10px;">Our Strategic Partners</h2>
-      <p style="margin-top:12px;color:#4a4a40;max-width:60ch;">St. Francis Kijaguzo Health Centre III has grown through the trust and support of the following partners.</p>
-      <div class="partner-row">
-        <a class="partner-tile" href="https://kasanaluweerodiocese.org/" target="_blank" rel="noopener">
-          <div class="logo-frame"><img src="https://kasanaluweerodiocese.org/wp-content/uploads/2023/09/cropped-cropped-Bishop-Lawrence-Mukasas-Emblem-1-150x150.jpeg" alt="Kasana–Luweero Diocese emblem" loading="lazy"></div>
-          <div>
-            <span class="name">Kasana&ndash;Luweero Diocese</span>
-            <span class="sub">Governing Diocese</span>
-          </div>
-        </a>
-        <a class="partner-tile" href="https://kasanaluweerodiocese.org/caritas-kasanaensis/" target="_blank" rel="noopener">
-          <div class="logo-frame"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Logo_Caritas_2026.svg" alt="Caritas logo" loading="lazy"></div>
-          <div>
-            <span class="name">Caritas Kasana&ndash;Luweero</span>
-            <span class="sub">Programme Partner</span>
-          </div>
-        </a>
-        <div class="partner-tile">
-          <div class="logo-frame"><span class="name" style="font-size:20px;">ZFK</span></div>
-          <div>
-            <span class="name">ZFK e.V.</span>
-            <span class="sub">Donor, Germany</span>
-          </div>
-        </div>
-        <div class="partner-tile">
-          <div class="logo-frame"><span class="name" style="font-size:20px;">1LD</span></div>
-          <div>
-            <span class="name">1LD e.V.</span>
-            <span class="sub">Donor, Germany</span>
-          </div>
-        </div>
-        <a class="partner-tile" href="https://www.bmz.de/en" target="_blank" rel="noopener">
-          <div class="logo-frame"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/DEgov-BMZ-Logo_en.svg" alt="BMZ &mdash; German Federal Ministry for Economic Cooperation and Development logo" loading="lazy"></div>
-          <div>
-            <span class="name">BMZ</span>
-            <span class="sub">Donor, Germany</span>
-          </div>
-        </a>
+      <div class="partners-head">
+        <h2>Strategic Partners</h2>
+        <div class="deco-rule"><i></i></div>
       </div>
+      <div class="partner-carousel" id="partnerCarousel">
+        <div class="partner-track" id="partnerTrack">
+          <a class="partner-logo" href="https://kasanaluweerodiocese.org/" target="_blank" rel="noopener" aria-label="Kasana–Luweero Diocese">
+            <img src="https://kasanaluweerodiocese.org/wp-content/uploads/2023/09/cropped-cropped-Bishop-Lawrence-Mukasas-Emblem-1-150x150.jpeg" alt="Kasana–Luweero Diocese emblem" loading="lazy">
+          </a>
+          <a class="partner-logo" href="https://kasanaluweerodiocese.org/caritas-kasanaensis/" target="_blank" rel="noopener" aria-label="Caritas Kasana–Luweero">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Logo_Caritas_2026.svg" alt="Caritas Kasana–Luweero logo" loading="lazy">
+          </a>
+          <span class="partner-logo" aria-label="ZFK e.V."><span class="name" style="font-family:'Fraunces',serif;font-weight:600;font-size:20px;color:var(--pine-deep);">ZFK e.V.</span></span>
+          <span class="partner-logo" aria-label="1LD e.V."><span class="name" style="font-family:'Fraunces',serif;font-weight:600;font-size:20px;color:var(--pine-deep);">1LD e.V.</span></span>
+          <a class="partner-logo" href="https://www.bmz.de/en" target="_blank" rel="noopener" aria-label="BMZ">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/DEgov-BMZ-Logo_en.svg" alt="BMZ &mdash; German Federal Ministry for Economic Cooperation and Development logo" loading="lazy">
+          </a>
+        </div>
+      </div>
+      <div class="partner-dots" id="partnerDots"></div>
     </div>
   </section>
 
