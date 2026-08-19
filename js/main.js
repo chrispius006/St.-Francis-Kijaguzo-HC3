@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // close the mobile menu after a plain nav link is followed
-    document.querySelectorAll('nav.links > .nav-item > a:not(.has-dropdown-trigger), .header-cta, .dropdown a')
+    // (the Services trigger is excluded here — it toggles the accordion instead, see below)
+    document.querySelectorAll('nav.links > .nav-item:not(.has-dropdown) > a, .header-cta, .dropdown a')
       .forEach(a => a.addEventListener('click', () => header.classList.remove('open')));
   }
 
@@ -208,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
     statNums.forEach(el => statObs.observe(el));
   }
 
-  /* ---- scroll-reveal ---- */
+  /* ---- scroll-reveal (with a stagger for groups of siblings, e.g. card grids) ---- */
   const obs = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -218,5 +219,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { threshold: 0.15 });
 
-  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  document.querySelectorAll('.reveal').forEach(el => {
+    const siblings = Array.from(el.parentElement.querySelectorAll(':scope > .reveal'));
+    const index = siblings.indexOf(el);
+    if (index > 0) el.style.transitionDelay = `${Math.min(index * 90, 450)}ms`;
+    obs.observe(el);
+  });
 });

@@ -478,6 +478,10 @@ footer a:hover {
 @media (max-width: 920px) {
   footer .wrap {
     grid-template-columns: 1fr 1fr;
+    gap: 32px 24px;
+  }
+  .f-brand {
+    grid-column: 1 / -1;
   }
 }
 @media (max-width: 720px) {
@@ -534,10 +538,6 @@ footer a:hover {
     display: block;
     margin: 14px 4px 4px;
     text-align: center;
-  }
-  footer .wrap {
-    grid-template-columns: 1fr;
-    gap: 32px;
   }
   .wrap {
     padding: 0 22px;
